@@ -31,14 +31,19 @@ body {
                         display: flex;
                         align-items: center;
                         height: 40px;
-                    
+                        
+                        span {
+                            font-family: "Yantramanav", sans-serif;
+                            font-size: 24px;
+                            font-weight: bold;
+                        }
                     }
 
                 
 
                 div:hover {
                     width: 275px;
-                    border-bottom: 1px solid #5EBAC8;
+                    border-bottom: 4px solid #5EBAC8;
                 }
 
                 div {
@@ -54,7 +59,7 @@ body {
                             display: flex;
                             justify-content: center;
                             color: $cheminColor;
-                            font-size: 15px;
+                            font-size: 18px;
                         }
                     }
                 } 
@@ -66,25 +71,42 @@ body {
                 color: white;
                 display: flex;
                 align-items: center;
-                padding-left: 40px;
+                
+                >span {
+                    padding-left: 40px;
+                    font-family: "Yantramanav", sans-serif;
+                    font-size: 16px;
+                    font-weight: bold;
+                }
             }
 
             #titreHero1 {
+                margin-top: 20px;
                 width: 695px;
+                font-family: "Yantramanav", sans-serif;
                 @media screen and (max-width: 1260px) {
                     width: 100%;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                 }
+                .titreLogo {
+                    width: 250px;
+                    display: flex;
+                    justify-content: space-between;
 
-                h3 {
-                    color: #5EBAC8;
-                    text-transform: uppercase;
+                    h3 {
+                        color: #5EBAC8;
+                        text-transform: uppercase;
+                        
+                    }
                 }
 
                 p {
                     font-size: 30px;
+                    font-family: "Yantramanav", sans-serif;
+                    font-weight: bold;
+                    margin: 0;
                     @media screen and (max-width: 1260px) {
                         font-size: 20px;
                         width: 100%;
@@ -92,8 +114,9 @@ body {
                     }
 
                     span {
-                        font-weight: 500;
+                        font-weight: bold;
                         font-size: 40px;
+                        font-family: "Yantramanav", sans-serif;
                     }
                 }
             }
@@ -157,6 +180,7 @@ body {
                             color: white;
                             font-weight: 500;
                             font-size: 30px;
+                            font-family: "Yantramanav", sans-serif;
                             
                             
                         }
@@ -191,23 +215,14 @@ body {
                             a {
                                 text-decoration: none;
                                 color: white;
-                                font-size: 20px;
-                                
-                                
-                                
-                                
-                        
+                                font-size: 20px;                    
 
                                 .blockImage {
                                     height: 136.94px;
                                     @media screen and (max-width: 1260px) {
                                         height: 80%;
                                         width: 100%;
-                                    }
-                                    
-                                    
-                                   
-                                    
+                                    }                                   
 
                                     .imageExercice {
                                     width: 269px;
@@ -228,6 +243,7 @@ body {
                                     h3 {
                                         margin: 0;
                                         margin-left: 20px;
+                                        font-family: "Yantramanav", sans-serif;
                                     }
 
                                 }
@@ -247,13 +263,22 @@ body {
                     justify-content: center;
                 }
 
-                h3 {
-                    color: #5EBAC8;
-                    text-transform: uppercase;
+                 .titreLogo {
+                    width: 220px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    h3 {
+                        color: #5EBAC8;
+                        text-transform: uppercase;
+                        font-family: "Yantramanav", sans-serif;
+                    }
+
                 }
 
                 p {
                     font-size: 30px;
+                    font-family: "Yantramanav", sans-serif;
                     @media screen and (max-width: 1260px) {
                         font-size: 20px;
                         width: 100%;
@@ -261,8 +286,9 @@ body {
                     }
 
                     span {
-                        font-weight: 500;
+                        font-weight: bold;
                         font-size: 40px;
+                        font-family: "Yantramanav", sans-serif;
                     }
                 }
             }
@@ -301,6 +327,7 @@ body {
                             color: white;
                             font-weight: 500;
                             font-size: 30px;
+                            font-family: "Yantramanav", sans-serif;
                         }
                     }
 
@@ -359,6 +386,7 @@ body {
                                     h3 {
                                         margin: 0;
                                         margin-left: 20px;
+                                        font-family: "Yantramanav", sans-serif;
 
                                     }
 
@@ -374,15 +402,37 @@ body {
 
 //Page notes
 
+#titreHero {
+    margin-top: 40px;
+    h3 {
+        font-family: "Yamatranav", sans-serif;
+        color: $bleuTurquoise;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    p {
+        font-family: "Yamatranav", sans-serif;
+
+        span {
+            font-family: "Yamatranav", sans-serif;
+        }
+    }
+}
+
 #notesPubliques {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 700px;
+    margin-bottom: 25px;
 
     #switch {
         width: 334px;
         display: flex;
         border-radius: 20px;
         background-color: $headerColor;
+        margin: 43px 0;
           
         #boutonPerso {
             width: 167px;
@@ -391,18 +441,20 @@ body {
                 display: flex;
                 justify-content: center;
                 color: black;
+                font-family: "Yamatranav", sans-serif;
             }
         }
 
         #boutonPublique {
             width: 167px;
             border-radius: 20px;
-            background-color: $cheminColor;
+            background-color: $bleuTurquoise;
 
             h3 {
                 display: flex;
                 justify-content: center;
                 color: white;
+                font-family: "Yamatranav", sans-serif;
             }
         }    
     }
@@ -428,7 +480,7 @@ body {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                background-color: $hoverColor;
+                background-color: $bleuTurquoise;
                 padding: 0% 2%;
 
 
@@ -443,9 +495,192 @@ body {
                         width: 30%;
                         height: 30%;
                     }
+
+                    >div {
+                      
+                        h4 {
+                            color: white;
+                            font-family: "Yamatranav", sans-serif;
+                            margin-left: 10%;
+                            width: 150px;
+
+                        }
+                    }
                 }
 
             
         }
     }
+}
+
+//Page table des matières
+
+
+.modulesTitres {
+
+    height: 45px;
+    background-color: #E5F0E6;
+    width: 100%;
+    height: 80px;
+    display:flex;
+    align-items: center;
+    padding-left: 50px;
+    font-family:"Yantramanav", sans-serif;
+    font-size: 25px;
+    font-weight: 550;
+    margin-top: 40px;  
+    
+}
+
+.blocThemes {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+
+    .blocModules{
+        display:flex;
+        margin-left: 10px;
+        align-items: center;
+        padding-bottom: 0;
+        padding: 10px 0;
+
+        .thèmesCercle {
+            width: 50px;
+            height: 50px;
+            background-color: #7CC170;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            margin-left: 60px;
+            margin-right: 40px;
+            font-family: "Yantramanav", sans-serif;
+        }
+
+        .titreThèmes{
+            font-family: "Yantramanav", sans-serif;
+            font-size: 25px;
+            padding-left: 10px;
+                
+            
+            
+        }
+    }
+
+    
+    .segment {
+        height: 50px;
+        width: 100%;
+        border-left: 5px solid black;
+        margin-left: 92px;
+        padding-left: 50%;
+        display: flex;
+        align-items: center;
+
+        .placeCercle{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            font-weight: bold;
+    
+            .boutonOrange {
+                display: inline-block;
+                padding: 10px 0px;
+                background-color: rgba(252, 182, 48, 0.86);
+                color: white;
+                text-decoration: none;     
+                border-radius: 5px;
+                border: none;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 200px;
+
+                span {
+                    font-size: 20px;
+                    font-family: "Yantramanav", sans-serif;
+                    font-weight: bold;
+
+                }
+            }
+
+            .boutonGray {
+                display: inline-block;
+                padding: 10px 0px;
+                background-color: #737373;
+                color: white;
+                text-decoration: none;
+                border-radius: 5px;
+                border: none;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 200px;
+
+                span {
+                    font-size: 20px;
+                    font-family: "Yantramanav", sans-serif;
+                    font-weight: bold
+                }
+            }
+        }
+    }
+
+    .blocModules{
+        display:flex;
+        margin-left: 10px;
+        align-items: center;
+
+        .thèmesCercleRed {
+            width: 50px;
+            height: 50px;
+            background-color: #ED704C;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            margin-left: 60px;
+        
+
+            .titreThèmes{
+                font-family: "Yantramanav", sans-serif;
+                font-size: 20px;
+                padding-left: 10px;
+                
+            
+            }
+        }
+    }
+
+    
+
+    .placeCercle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .boutonGray {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #737373;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
+    }
+
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #header #headerRight .menuHorizontal ul, #header div, #header {
   display: flex;
   justify-content: space-between;
@@ -97,6 +98,9 @@
   justify-content: space-between;
   margin-bottom: 60px;
 }
+#hero #menuVertical .mainMenuVertical #pageActuelle {
+  background-color: #FCB630;
+}
 #hero #menuVertical .mainMenuVertical .tailleIcon {
   height: 40px;
 }
@@ -147,9 +151,14 @@ body #hero .container #navBar a {
   align-items: center;
   height: 40px;
 }
+body #hero .container #navBar a span {
+  font-family: "Yantramanav", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
 body #hero .container #navBar div:hover {
   width: 275px;
-  border-bottom: 1px solid #5EBAC8;
+  border-bottom: 4px solid #5EBAC8;
 }
 body #hero .container #navBar div {
   width: 275px;
@@ -164,7 +173,7 @@ body #hero .container #navBar div a span {
   display: flex;
   justify-content: center;
   color: #5EBAC8;
-  font-size: 15px;
+  font-size: 18px;
 }
 body #hero .container #cheminRelatif {
   width: 100%;
@@ -173,10 +182,17 @@ body #hero .container #cheminRelatif {
   color: white;
   display: flex;
   align-items: center;
+}
+body #hero .container #cheminRelatif > span {
   padding-left: 40px;
+  font-family: "Yantramanav", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
 }
 body #hero .container #titreHero1 {
+  margin-top: 20px;
   width: 695px;
+  font-family: "Yantramanav", sans-serif;
 }
 @media screen and (max-width: 1260px) {
   body #hero .container #titreHero1 {
@@ -186,12 +202,20 @@ body #hero .container #titreHero1 {
     justify-content: center;
   }
 }
-body #hero .container #titreHero1 h3 {
+body #hero .container #titreHero1 .titreLogo {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+body #hero .container #titreHero1 .titreLogo h3 {
   color: #5EBAC8;
   text-transform: uppercase;
 }
 body #hero .container #titreHero1 p {
   font-size: 30px;
+  font-family: "Yantramanav", sans-serif;
+  font-weight: bold;
+  margin: 0;
 }
 @media screen and (max-width: 1260px) {
   body #hero .container #titreHero1 p {
@@ -200,8 +224,9 @@ body #hero .container #titreHero1 p {
   }
 }
 body #hero .container #titreHero1 p span {
-  font-weight: 500;
+  font-weight: bold;
   font-size: 40px;
+  font-family: "Yantramanav", sans-serif;
 }
 body #hero .container #contenu {
   display: flex;
@@ -262,6 +287,7 @@ body #hero .container #contenu #blockDefi1 #defi > span {
   color: white;
   font-weight: 500;
   font-size: 30px;
+  font-family: "Yantramanav", sans-serif;
 }
 body #hero .container #contenu #blockDefi1 #nbEvent {
   margin: 0 39px 94px 39px;
@@ -322,6 +348,7 @@ body #hero .container #contenu #blockDefi1 #nbEvent .exercice a .titreDefi {
 body #hero .container #contenu #blockDefi1 #nbEvent .exercice a .titreDefi h3 {
   margin: 0;
   margin-left: 20px;
+  font-family: "Yantramanav", sans-serif;
 }
 body #hero .container #titreHero2 {
   width: 695px;
@@ -335,12 +362,19 @@ body #hero .container #titreHero2 {
     justify-content: center;
   }
 }
-body #hero .container #titreHero2 h3 {
+body #hero .container #titreHero2 .titreLogo {
+  width: 220px;
+  display: flex;
+  justify-content: space-between;
+}
+body #hero .container #titreHero2 .titreLogo h3 {
   color: #5EBAC8;
   text-transform: uppercase;
+  font-family: "Yantramanav", sans-serif;
 }
 body #hero .container #titreHero2 p {
   font-size: 30px;
+  font-family: "Yantramanav", sans-serif;
 }
 @media screen and (max-width: 1260px) {
   body #hero .container #titreHero2 p {
@@ -349,8 +383,9 @@ body #hero .container #titreHero2 p {
   }
 }
 body #hero .container #titreHero2 p span {
-  font-weight: 500;
+  font-weight: bold;
   font-size: 40px;
+  font-family: "Yantramanav", sans-serif;
 }
 body #hero .container #blockDefi2 {
   border: 6px solid #8DC87B;
@@ -388,6 +423,7 @@ body #hero .container #blockDefi2 #defi > span {
   color: white;
   font-weight: 500;
   font-size: 30px;
+  font-family: "Yantramanav", sans-serif;
 }
 body #hero .container #blockDefi2 #nbEvent {
   margin: 0 39px 94px 39px;
@@ -448,17 +484,38 @@ body #hero .container #blockDefi2 #nbEvent .exercice a .titreDefi {
 body #hero .container #blockDefi2 #nbEvent .exercice a .titreDefi h3 {
   margin: 0;
   margin-left: 20px;
+  font-family: "Yantramanav", sans-serif;
+}
+
+#titreHero {
+  margin-top: 40px;
+}
+#titreHero h3 {
+  font-family: "Yamatranav", sans-serif;
+  color: #5EBAC8;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#titreHero p {
+  font-family: "Yamatranav", sans-serif;
+}
+#titreHero p span {
+  font-family: "Yamatranav", sans-serif;
 }
 
 #notesPubliques {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 700px;
+  margin-bottom: 25px;
 }
 #notesPubliques #switch {
   width: 334px;
   display: flex;
   border-radius: 20px;
   background-color: white;
+  margin: 43px 0;
 }
 #notesPubliques #switch #boutonPerso {
   width: 167px;
@@ -467,6 +524,7 @@ body #hero .container #blockDefi2 #nbEvent .exercice a .titreDefi h3 {
   display: flex;
   justify-content: center;
   color: black;
+  font-family: "Yamatranav", sans-serif;
 }
 #notesPubliques #switch #boutonPublique {
   width: 167px;
@@ -477,6 +535,7 @@ body #hero .container #blockDefi2 #nbEvent .exercice a .titreDefi h3 {
   display: flex;
   justify-content: center;
   color: white;
+  font-family: "Yamatranav", sans-serif;
 }
 #notesPubliques > div {
   display: flex;
@@ -496,7 +555,7 @@ body #hero .container #blockDefi2 #nbEvent .exercice a .titreDefi h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #3C8E9A;
+  background-color: #5EBAC8;
   padding: 0% 2%;
 }
 #notesPubliques > div .auteur .utilisateur {
@@ -508,6 +567,153 @@ body #hero .container #blockDefi2 #nbEvent .exercice a .titreDefi h3 {
 #notesPubliques > div .auteur .utilisateur > img {
   width: 30%;
   height: 30%;
+}
+#notesPubliques > div .auteur .utilisateur > div h4 {
+  color: white;
+  font-family: "Yamatranav", sans-serif;
+  margin-left: 10%;
+  width: 150px;
+}
+
+.modulesTitres {
+  height: 45px;
+  background-color: #E5F0E6;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  font-family: "Yantramanav", sans-serif;
+  font-size: 25px;
+  font-weight: 550;
+  margin-top: 40px;
+}
+
+.blocThemes {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.blocThemes .blocModules {
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+  padding-bottom: 0;
+  padding: 10px 0;
+}
+.blocThemes .blocModules .thèmesCercle {
+  width: 50px;
+  height: 50px;
+  background-color: #7CC170;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 60px;
+  margin-right: 40px;
+  font-family: "Yantramanav", sans-serif;
+}
+.blocThemes .blocModules .titreThèmes {
+  font-family: "Yantramanav", sans-serif;
+  font-size: 25px;
+  padding-left: 10px;
+}
+.blocThemes .segment {
+  height: 50px;
+  width: 100%;
+  border-left: 5px solid black;
+  margin-left: 92px;
+  padding-left: 50%;
+  display: flex;
+  align-items: center;
+}
+.blocThemes .segment .placeCercle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-weight: bold;
+}
+.blocThemes .segment .placeCercle .boutonOrange {
+  display: inline-block;
+  padding: 10px 0px;
+  background-color: rgba(252, 182, 48, 0.86);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+}
+.blocThemes .segment .placeCercle .boutonOrange span {
+  font-size: 20px;
+  font-family: "Yantramanav", sans-serif;
+  font-weight: bold;
+}
+.blocThemes .segment .placeCercle .boutonGray {
+  display: inline-block;
+  padding: 10px 0px;
+  background-color: #737373;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+}
+.blocThemes .segment .placeCercle .boutonGray span {
+  font-size: 20px;
+  font-family: "Yantramanav", sans-serif;
+  font-weight: bold;
+}
+.blocThemes .blocModules {
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+}
+.blocThemes .blocModules .thèmesCercleRed {
+  width: 50px;
+  height: 50px;
+  background-color: #ED704C;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 60px;
+}
+.blocThemes .blocModules .thèmesCercleRed .titreThèmes {
+  font-family: "Yantramanav", sans-serif;
+  font-size: 20px;
+  padding-left: 10px;
+}
+.blocThemes .placeCercle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blocThemes .placeCercle .boutonGray {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #737373;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
