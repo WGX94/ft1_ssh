@@ -1,0 +1,59 @@
+#hero {
+    
+
+ 
+    #menuVertical {
+        position: fixed;
+        left: 0;
+        top: 61px;
+        background-color: $navColor;
+        width: 64px;
+        height: 100%;
+        overflow-y: auto;
+        z-index: 1;
+
+        #profil {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            margin-bottom: 60px;   
+        }
+
+        #menuTop {
+            padding-bottom: 60px;
+            border-width: 30px;
+            border-bottom: 1px solid grey;
+        }
+
+        
+
+        .mainMenuVertical {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom: 60px;
+
+            .tailleIcon {
+                height: 40px;
+
+                :hover {
+                    background-color: #FCB630;
+                }
+
+                .iconGauche {
+                    padding: 10% 0 10% 0;
+                    display: flex;
+                    justify-content: center;
+                    width: 60px;
+                
+
+                    img {
+                        width: 25%;
+                        
+                    }
+                }   
+            }
+        }
+    }
+
+}
